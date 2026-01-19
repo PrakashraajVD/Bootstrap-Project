@@ -1,0 +1,62 @@
+header > h1 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  color: #333333;
+}
+#brand {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 26px;
+}
+#herospan {
+  text-transform: uppercase;
+  color: #888888d1;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.heroheading {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 320;
+  font-style: normal;
+  font-size: clamp(34px, 4vw, 56px);
+  color: #333333;
+  width: fit-content;
+}
+.heropara {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(17px, 4vw, 18px);
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 30px;
+  color: #666b6f;
+}
+.para1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(12px, 4vw, 16px);
+  font-style: normal;
+  color: #9b999b;
+  font-weight: 400;
+  font-variation-settings: "wdth" 100;
+  line-height: 30px;
+}
+#homebutton {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  outline: 1px solid #dddddd;
+  color: #555555;
+}
