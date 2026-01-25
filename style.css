@@ -51,7 +51,7 @@ header > h1 {
   font-variation-settings: "wdth" 100;
   line-height: 30px;
 }
-#homebutton {
+.homebutton {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-size: 16px;
@@ -59,4 +59,150 @@ header > h1 {
   font-variation-settings: "wdth" 100;
   outline: 1px solid #dddddd;
   color: #555555;
+  width: fit-content;
+}
+.homebutton {
+  display: inline-flex;
+  align-items: center;
+}
+
+.homebutton i {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.aboutheading {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 320;
+  font-style: normal;
+  font-size: clamp(34px, 4vw, 44px);
+  color: #333333;
+  width: fit-content;
+}
+.aboutcard h5 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+}
+.aboutcard p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #7f7f7f;
+}
+.timeline time {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 12px;
+  color: #7f7f7f;
+  font-weight: 450;
+  letter-spacing: 2px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.timeline p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14px;
+  color: #7f7f7f;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.timeline h4 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+}
+.aboutquote {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: clamp(20px, 4vw, 28px);
+  font-style: normal;
+}
+.factpill {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #6f6f6f;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  border: 1px solid;
+}
+.header {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.skillpill {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.skillheader {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+}
+.skillpara {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #c6c5c4;
+  line-height: 2rem;
+}
+.skillfooter {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #c6c5c4;
+  line-height: 2rem;
+}
+.toolbox {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #555555;
+}
+.toolboxhead {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: #333333;
 }
