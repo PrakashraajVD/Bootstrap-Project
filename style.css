@@ -206,3 +206,266 @@ header > h1 {
   font-size: 16px;
   color: #333333;
 }
+.tab-number {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.tab-title {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.resume-tab {
+  border-bottom: 3px solid transparent; /* width + style defined */
+}
+
+.resume-tab:hover {
+  border-bottom-color: #000;
+}
+
+.resume-tab.active {
+  border-bottom-color: #000;
+}
+
+.resume-head {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  color: #333333;
+}
+.resume-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 18px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.resumecard-head {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  color: #333333;
+}
+.resumecard-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 14.4px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.resumecard-para1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  color: black;
+  font-variation-settings: "wdth" 100;
+}
+.resumecard-content {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+.education-head {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #333333;
+}
+.skill-tag {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.portfolio-tab:hover {
+  border-color: #000;
+}
+.portfolio-tab.active {
+  border-color: #000;
+}
+.portfolio-tab {
+  border-bottom: 2px solid #eeeeee;
+}
+.portfoliocard-title {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  color: #333333;
+}
+.portfoliocard-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 14px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.portfolio-img {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.portfolio-img:hover {
+  transform: translateY(-5px);
+}
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-img:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.overlay-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.overlay-btn i {
+  font-size: 20px;
+  color: #333;
+}
+
+.overlay-btn:hover {
+  transform: scale(1.1);
+  background: black;
+}
+.overlay-btn:hover i {
+  color: white;
+}
+.avatar {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+.testimonial-title {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  color: #333333;
+}
+.testimonial-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 16px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.carousel-indicators [data-bs-target] {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.carousel-indicators .active {
+  background-color: #000;
+}
+.service-title {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 24px;
+  color: #333333;
+  font-style: normal;
+}
+.service-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 16px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.8rem;
+  word-spacing: 7px;
+}
+.faq-number {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(14.4px, 4vw, 17.7px);
+  color:#aeaeae;
+}
+.faq-title {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: black;
+}
+.faq-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.8rem;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.accordion-button::after {
+  background-image: none !important;
+  content: "+";
+  font-size: 22px;
+  font-weight: 300;
+  margin-left: auto;
+  transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+
+.accordion-button:not(.collapsed)::after {
+  content:"-";
+}
+.accordion-button:hover .faq-number{
+  color: black;
+}
