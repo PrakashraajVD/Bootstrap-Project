@@ -426,7 +426,7 @@ header > h1 {
   font-weight: 500;
   font-style: normal;
   font-size: clamp(14.4px, 4vw, 17.7px);
-  color:#aeaeae;
+  color: #aeaeae;
 }
 .faq-title {
   font-family: "Quicksand", sans-serif;
@@ -460,12 +460,218 @@ header > h1 {
   font-size: 22px;
   font-weight: 300;
   margin-left: auto;
-  transition: transform 0.25s cubic-bezier(.4,0,.2,1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .accordion-button:not(.collapsed)::after {
-  content:"-";
+  content: "-";
 }
-.accordion-button:hover .faq-number{
+.accordion-button:hover .faq-number {
   color: black;
+}
+.contact-head {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: clamp(28px, 4vw, 36px);
+  color: black;
+}
+.contact-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.8rem;
+}
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+}
+.form-control {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #d9d9d9;
+  border-radius: 0;
+  padding: 4px 0 16px;
+}
+#contact label {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.form-control::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+  color: #b8b9ba;
+  font-variation-settings: "wdth" 100;
+}
+.sendmsg {
+  padding: 18px 40px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-style: normal;
+  color: black;
+  font-variation-settings: "wdth" 100;
+}
+.git-head {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+  color: #333333;
+}
+.git-para {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.git-span {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-style: normal;
+  color: black;
+  font-variation-settings: "wdth" 100;
+}
+.git-p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-size: 15px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.social-link {
+  color: #555555;
+}
+.social-links {
+  transition: all 0.3s ease;
+}
+.social-links > a:hover {
+  transform: translateY(-3px);
+}
+.social-links > a:hover .social-link {
+  color: black;
+}
+.footer-text {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 14px;
+  font-style: normal;
+  color: #555555;
+  font-variation-settings: "wdth" 100;
+}
+.footer-link {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #555555;
+  border-radius: 100%;
+  transition: all 0.3s ease;
+}
+.footer-link i{
+  color: #555555;
+  transition: all 0.3s ease;
+}
+.footer-link:hover{
+  border-color: black;
+}
+.footer-link:hover i{
+  color: black;
+}
+/* HEADER */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+
+.brand {
+  font-family: "Quicksand", sans-serif;
+  font-size: 22px;
+}
+
+/* Hamburger Button */
+.menu-btn {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 1055;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  transition: opacity 0.3s ease;
+}
+:root {
+  --sidebar-width: 200px;
+}
+/* Offcanvas */
+.offcanvas {
+  width: var(--sidebar-width);
+  background: #f2f2f2;
+  padding-top: 80px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: #8a8a8a;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: black;
+  transform: translateX(5px);
+}
+
+.nav-links .active {
+  color: black;
+}
+
+/* External Close Button */
+.external-close-btn {
+  position: fixed;
+  top: 25px;
+  right: calc(var(--sidebar-width) + 200px);
+  z-index: 1060;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.1s ease;
 }

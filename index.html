@@ -18,11 +18,33 @@
 </head>
 
 <body>
-    <header class="d-flex align-items-center py-3">
-        <div class="d-flex align-items-center px-3">
-            <h1 id="brand">MinimalFolio</h1>
-        </div>
+    <header class="d-flex align-items-center py-3 justify-content-between mx-3">
+        <h1 id="brand">MinimalFolio</h1>
+        <button class="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+            <i class="bi bi-list fs-2"></i>
+        </button>
     </header>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+
+        <div class="offcanvas-body nav-links">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Resume</a>
+            <a href="#" class="active">Portfolio</a>
+            <a href="#">Services</a>
+            <a href="#">Dropdown</a>
+            <a href="#">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- External Close Button -->
+    <button id="externalClose" class="external-close-btn" data-bs-dismiss="offcanvas" data-bs-target="#sidebar">
+        <i class="bi bi-x-lg"></i>
+    </button>
     <section id="hero" class="container mt-5 pb-5 mb-5">
         <div class="row d-flex align-items-center">
             <div class="col-lg-7">
@@ -1310,6 +1332,137 @@
             </div>
         </div>
     </section>
+    <section id="contact" class="pt-5 bg-light-subtle" style="padding-bottom: 5%;">
+        <div class="container">
+            <div class="row text-center">
+                <h2 class="header h2 text-secondary-emphasis">Contact</h2>
+                <p class="para text-secondary">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                    consectetur velit</p>
+            </div>
+            <div class="row d-flex align-items-center mt-5">
+                <div class="col-lg-5 order-1 order-lg-2 px-lg-5 py-lg-5"
+                    style="background-color: #f2f2f2;height:fit-content;padding-bottom: 50px;">
+                    <h3 class="git-head">Get in Touch</h3>
+                    <p class="git-para">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad
+                        minim veniam quis nostrud.</p>
+                    <div class="mt-4 d-flex flex-column row-gap-4">
+                        <div class="d-flex column-gap-4 ms-2">
+                            <i class="bi bi-geo-alt text-black mt-3 fs-5"></i>
+                            <div>
+                                <span class="git-span">ADDRESS</span>
+                                <p class="git-p mt-1">892 Park Avenue, Manhattan <br>New York, NY 10075</p>
+                            </div>
+                        </div>
+                        <div class="d-flex column-gap-4 ms-2">
+                            <i class="bi bi-envelope text-black mt-3 fs-5"></i>
+                            <div>
+                                <span class="git-span">EMAIL</span>
+                                <p class="git-p mt-1">hello@businessdemo.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex column-gap-4 ms-2">
+                            <i class="bi bi-telephone text-black mt-3 fs-5"></i>
+                            <div>
+                                <span class="git-span">PHONE</span>
+                                <p class="git-p mt-1">+1 (555) 789-2468</p>
+                            </div>
+                        </div>
+                        <div class="d-flex column-gap-4 ms-2">
+                            <i class="bi bi-clock text-black mt-3 fs-5"></i>
+                            <div>
+                                <span class="git-span">HOURS</span>
+                                <p class="git-p mt-1">Monday - Friday: 9AM - 6PM <br>Saturday: 10AM - 4PM</p>
+                            </div>
+                        </div>
+                        <hr class="mt-4 pb-3">
+                    </div>
+                    <span class="git-span">CONNECT WITH US</span>
+                    <div class="d-flex gap-5 ms-3 social-links mt-4">
+                        <a href="#"><i class="bi bi-linkedin fs-4 social-link"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x fs-4 social-link"></i></a>
+                        <a href="#"><i class="bi bi-instagram fs-4 social-link"></i></a>
+                        <a href="#"><i class="bi bi-facebook fs-4 social-link"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-2 order-lg-1 pe-4">
+                    <h2 class="contact-head">Let's Start a Conversation</h2>
+                    <p class="contact-para mt-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                        dolore
+                        eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+                    <div class="row gy-5 pt-3">
+                        <div class="col-lg-6">
+                            <label for="name" class="form-label">NAME</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="mail" class="form-label">EMAIL</label>
+                            <input type="email" id="mail" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="phone" class="form-label">PHONE</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Your Phone">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="subject" class="form-label">SUBJECT</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="message" class="form-label">MESSAGE</label>
+                            <textarea id="message" class="form-control" placeholder="Tell us about your project"
+                                style="height: 20vh"></textarea>
+                        </div>
+                    </div>
+                    <button class="mt-5 btn btn-outline-dark rounded-0 sendmsg d-flex column-gap-2 icon-link-hover">SEND
+                        MESSAGE <i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5">
+        <p class="text-center footer-text">
+            &copy;
+            <span>Copyright</span>
+            <strong class="px-2">MinimalFolio</strong>
+            <span>All Rights Reserved</span>
+        </p>
+        <div class="d-flex justify-content-center column-gap-3">
+            <div class="d-flex align-items-center justify-content-center footer-link">
+                <a href="#"><i class="bi bi-twitter-x fs-6"></i></a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center footer-link">
+                <a href="#"><i class="bi bi-facebook fs-6"></i></a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center footer-link">
+                <a href="#"><i class="bi bi-instagram fs-6"></i></a>
+            </div>
+            <div class="d-flex align-items-center justify-content-center footer-link">
+                <a href="#"><i class="bi bi-linkedin fs-6"></i></a>
+            </div>
+        </div>
+        <p class="text-center mt-3">Designed by <strong>Prakashraaj V D</strong></p>
+    </footer>
+  <script>
+  const sidebar = document.getElementById('sidebar');
+  const closeBtn = document.getElementById('externalClose');
+  const menuBtn = document.querySelector('.menu-btn');
+
+  sidebar.addEventListener('shown.bs.offcanvas', () => {
+    closeBtn.style.opacity = "1";
+    closeBtn.style.pointerEvents = "auto";
+    menuBtn.style.opacity = "0";
+    menuBtn.style.pointerEvents = "none";
+  });
+
+  sidebar.addEventListener('hidden.bs.offcanvas', () => {
+    closeBtn.style.opacity = "0";
+    closeBtn.style.pointerEvents = "none";
+    menuBtn.style.opacity = "1";
+    menuBtn.style.pointerEvents = "auto";
+  });
+</script>
+
+
+
 </body>
 
 </html>
